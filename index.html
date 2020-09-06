@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Panel</title>
+  </head>
+  <body class="bg-right">
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+          
+          <nav aria-label="breadcrumb" class="mb-3 ">
+            <ol class="breadcrumb bg-common">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">User</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Profile Setting</li>
+            </ol>
+          </nav>
+          <div class="row">
+            <!-- Right side navbar -->
+            <div class="col-lg-3 col-md-4 d-md-block">
+              <div class="card bg-common card-left bg-common">
+                <div class="card-body">
+                  <nav class="nav d-md-block d-none">
+                    <a data-toggle='tab' class="nav-link active" href="#profile">  
+                      <i class="fas fa-user mr-1"></i>Profile</a>
+
+                    <a data-toggle='tab' class="nav-link" href="#account">
+                      <i class="fas fa-user-cog mr-1"></i>Account Settings</a>
+                    <a data-toggle='tab' class="nav-link" href="#security">
+                      <i class="fas fa-user-shield mr-1"></i>Security</a>
+                    <a data-toggle='tab' class="nav-link" href="#notification">
+                      <i class="fas fa-bell mr-1"></i>Notifications</a>
+                    <a data-toggle='tab' class="nav-link" href="#billing">
+                      <i class="fas fa-money-check-alt mr-1"></i>Billing</a>
+                  </nav>
+                </div>
+              </div>        
+            </div>
+            
+            <!-- Right side div start -->
+            <div class="col-lg-9 col-md-9">
+              <div class="card">
+              <div class="card-header border-bottom mb-3 d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                    <li class="nav-item">
+                      <a data-toggle='tab' class="nav-link active" href="#profile"><i class="fas fa-user mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-toggle='tab' class="nav-link" href="#account"><i class="fas fa-user-cog mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-toggle='tab' class="nav-link" href="#security"><i class="fas fa-user-shield mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-toggle='tab' class="nav-link" href="#notification"><i class="fas fa-bell mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-toggle='tab' class="nav-link" href="#billing"><i class="fas fa-money-check-alt mr-1"></i></a>
+                    </li>
+                  </ul>
+              </div>
+
+              <!-- actual data which is live satrt -->
+              <div class="card-body tab-content border-0">
+                <!-- actual profile data -->
+                <div class="tab-pane active" id="profile">
+                  <h6>YOUR PROFILE INFORMATION</h6>
+                  <hr>
+                  <form>
+                    <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1">Full Name</label>
+                        <input type="email" class="form-control" id="username" placeholder="Aman Kesarwani">
+                        <small class="form-text text-muted">Please Enter Your Full Name</small>
+                      
+                    </div>
+                    <div class="mb-3">
+                      
+                    
+                      <label for="exampleFormControlTextarea1">Your Bio</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">I am web developer</textarea>
+                    </div>
+                    <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1">URL</label>
+                        <input type="email" class="form-control" id="url" placeholder="https://www.youtube.com">
+                      </div>
+                      <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1">Location</label>
+                        <input type="email" class="form-control" id="location" placeholder="Delhi , Mumbai ">
+                      </div>
+
+                      <div  class="form-group form-text text-mutes small">
+                        <br>
+                        All of the fields on this page are optional and can be deleted at any time, and by filling them out, you are us consent to share this data whereever your user profile appears.
+                      </div>
+                      <button class="btn btn-outline-info" type="button">Update Profile
+                      </button>
+                      <button class="btn btn-outline-info" type="reset">Reset Changes
+                      </button>
+                  </form>
+                </div>
+                <!-- actual profile data -->
+                <div class="tab-pane " id="account">
+                  <h6>ACCOUNT SETTINGS</h6>
+                  <hr>
+                  <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1">Username</label>
+                        <input type="email" class="form-control" id="username" placeholder="Aman Kesarwani">
+                        <small class="form-text text-muted">After changing your username, your old useranme becomes available for anyone else to claim.</small>
+                      
+                    </div>
+                     <form>
+                      <div class="md-3">
+                       <hr>
+                          <label for="exampleFormControlInput1" class="form-label text-danger">Delete Account</label>
+
+                          <p class="text-muted">
+                            Once you delete your account, there is no going back. Please be certain.
+                          </p>
+                      </div>
+                      <button class="btn btn-danger" type="reset">Delete Account
+                      </button>
+                    </form>
+                </div>
+
+                <!-- actual profile data -->
+                <div class="tab-pane " id="security">
+                 <h6>SECURITY SETTINGS</h6>
+                  <hr>
+                  <form>
+                  <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1">Change Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Your Current Password">
+                        <br>
+                        <input type="password" class="form-control" id="password" placeholder="Your New Password">
+                        <input type="password" class="form-control" id="password" placeholder="Confirm New Password">                     
+                    </div>
+                  </form>
+                  <hr>
+                  <form>
+                    <div class="form-group">
+                      <label class="d-block mb-2">
+                        Two Factor Authentication
+                      </label> 
+                      <button class="btn btn-outline-info " type="submit">Enable Two Factor Authentication
+                      </button>
+                      <p class="text-muted">Two Factor Authentication adds an additional layer of security to your account by requiring more than just a password to login.</p>                  
+                    </div>
+
+                  </form>
+                  <hr>
+                  <form>
+                    <div class="form-group">
+                      <label class="d-block mb-2">
+                        Sessions
+                      </label> 
+                      <p class="text-muted">This is the list of devices that have logged into your account. Revoke any sessions that you do not recognize..</p>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div>
+                            <h6>Pokhra 38.2093 N, 83.9856 E</h6>
+                            <small class="text-muted">Your current session seen in nepal.</small>
+                          </div>
+                          <button class="btn btn-light btn-sm ml-auto" type="button">
+                            More Information
+                          </button>
+                        </li>
+                      </ul>
+                                        
+                    </div>
+
+                  </form>
+                </div>
+
+                <!-- actual profile data -->
+                <div class="tab-pane " id="notification">
+                  <h6>NOTIFICATIONS SETTINGS</h6>
+                  <hr>
+                  <form>
+                    <div class="md-3">
+                     
+                        <label for="exampleFormControlInput1" class="form-label d-block">Security alerts</label>
+                        <small class="form-text text-muted">Recieve security alert notifications via email.</small>
+                        <br>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input" type="checkbox" class="custom-control-input" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Email each time a vulnerability is found</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" class="custom-control-input" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Email a digest summary of vulnerability</label>
+                        </div>  
+                    </div>
+                    <!-- SMS NOTIFICATIONS -->
+                    <div class="mb-3">
+                      <label class="d-block mb-2">SMS Notifications</label>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          Comments
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Upadtes from people
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                            <label class="custom-control-label" for="customSwitch2"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Reminders
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                            <label class="custom-control-label" for="customSwitch3"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Events
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                            <label class="custom-control-label" for="customSwitch4"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Page you follow
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                            <label class="custom-control-label" for="customSwitch5"></label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+                <!-- actual profile data -->
+                <div class="tab-pane " id="billing">
+                  <h6>BILLING SETTINGS</h6>
+                
+                <hr>
+                <form>
+                  <div class="mb-3">
+                    <label class="d-block">Payment Method</label>
+                    <small class="text-muted small">You have not added a payment method</small>
+                    <br>
+                    <button class="btn btn-outline-info mt-2">Add Payment Method</button>
+                  </div>
+                  <div class="mb-3">
+                    <label class="d-block">Payment Method</label>
+                    <div class="border p-3 text-center">
+                      You have not made any payment.
+                    </div>
+                  </div>
+                </form>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>     
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
